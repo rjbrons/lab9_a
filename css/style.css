@@ -1,8 +1,81 @@
 body {
   max-width: 100%;
 }
+body * {
+  /* outline: thin solid yellow; */
+}
+nav,
+footer {
+  height: 100px;
+  vertical-align: middle;
+  background-color: rgb(185, 185, 185);
+}
 
+header div {
+  width: 960;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  text-align: center;
+  display: inline-block;
+}
+
+button {
+  background-color: rgb(185, 185, 185);
+  margin-left: 20px;
+  font-size: 12pt;
+  width: 250px;
+  border-radius: 15px;
+}
+
+nav li {
+  display: inline-block;
+  width: 192px;
+  margin: 0 auto;
+}
+footer {
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+}
+.clearFix {
+  clear: both;
+}
 main {
   width: 960px;
   margin: 0 auto;
+}
+
+main div img {
+  padding: 15px 0px;
+}
+
+#featured img {
+  float: left;
+}
+
+main div:nth-child(2) > img {
+  float: left;
+  padding: 15px 30px 15px 0px;
+}
+
+main div:nth-child(2) :nth-child(3) {
+  padding: 15px 0px;
+}
+
+h2 {
+  padding: 15px;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+div p {
+  margin: 10px;
+  width: 445px;
+  height: 300px;
+  padding: 15px 0px 0px 15px;
+  display: inline-block;
+  overflow: scroll;
+  overscroll-behavior-y: contain;
 }
